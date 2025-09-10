@@ -132,6 +132,7 @@ namespace Calculator
             this.btnMultiplicacion.TabIndex = 9;
             this.btnMultiplicacion.Text = "MULTIPLICACION";
             this.btnMultiplicacion.UseVisualStyleBackColor = true;
+            this.btnMultiplicacion.Click += new System.EventHandler(this.btnMultiplicacion_Click);
             // 
             // frmCalculator
             // 

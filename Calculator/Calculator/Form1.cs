@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
-using System.Drawing.Text;
-using System.Security.Authentication;
 using System.Windows.Forms;
 
 namespace Calculator
@@ -64,6 +61,17 @@ namespace Calculator
             double rest = num1 / num2;
 
             string msj = "El resultado de la division es: " + rest;
+            lbResultado.Text = msj;
+        }
+
+        private void btnMultiplicacion_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToDouble(txtFirstNumber.Text);
+            double num2 = Convert.ToDouble(txtSecondNumber.Text);
+
+            double rest = num1 * num2;
+
+            string msj = "El resultado de la multiplicacion es: " + rest;
             lbResultado.Text = msj;
         }
     }
